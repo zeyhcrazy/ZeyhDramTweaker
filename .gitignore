@@ -1,0 +1,10 @@
+# build output
+bin/
+obj/
+out/
+publish/
+*.user
+.vs/
+.idea/
+# local diagnostics (SPD/controller dumps carry hardware details of whoever ran them)
+*-dump*.txt

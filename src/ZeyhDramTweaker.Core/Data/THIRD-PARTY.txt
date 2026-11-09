@@ -1,0 +1,11 @@
+Zeyh DRAM Tweaker - third-party components
+
+TestMem5 0.13.1 (TM5.exe, TM5.dll, bin/MT0.dll) - freeware by Serj, testmem.tz.ru.
+  Redistributed unchanged inside the Zeyh pack; extracted to %LocalAppData%\ZeyhDramTweaker\TestMem5 on first use.
+Test configurations: "@ anta777" by anta777, "1usmus v3 @ 1usmus" by 1usmus, "Universal 2 @ LMhz" by LMhz,
+  "Default @ serj" by Serj - community configs, unchanged.
+PawnIO modules AMDFamily17.bin and SmbusPIIX4.bin - namazso, LGPL-2.1 (see Hardware/Modules/LICENSE-PawnIO.Modules.txt).
+DDR4 tables and the Manual formula reproduce the behaviour of Ryzen DRAM Calculator 1.7.3 by 1usmus
+  (reverse engineered; no original code is included).
+
+PawnIO modules used: AMDFamily17 (SMN registers), SmbusPIIX4 (SPD), RyzenSMU (SMU metrics table). All LGPL-2.1, see Hardware\Modules\LICENSE-PawnIO.Modules.txt.

@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <LangVersion>latest</LangVersion>
+    <RootNamespace>ZeyhDramTweaker.Core</RootNamespace>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <InvariantGlobalization>false</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Data\ddr4_legacy.json.gz" LogicalName="ddr4_legacy.json.gz" />
+    <EmbeddedResource Include="Data\ddr4_manual.json.gz" LogicalName="ddr4_manual.json.gz" />
+    <EmbeddedResource Include="Hardware\Modules\AMDFamily17.bin" LogicalName="AMDFamily17.bin" />
+    <EmbeddedResource Include="Hardware\Modules\SmbusPIIX4.bin" LogicalName="SmbusPIIX4.bin" />
+    <EmbeddedResource Include="Hardware\Modules\RyzenSMU.bin" LogicalName="RyzenSMU.bin" />
+    <EmbeddedResource Include="Data\tm5.zip" LogicalName="tm5.zip" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Management" Version="9.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Hardware\Modules\LICENSE-PawnIO.Modules.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Include="Data\THIRD-PARTY.txt" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>
